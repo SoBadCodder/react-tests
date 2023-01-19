@@ -66,28 +66,44 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <ul>
-        <li>
+      <ul
+        class="container"
+      >
+        <li
+          class="items"
+        >
           html
         </li>
-        <li>
+        <li
+          class="items"
+        >
           css
         </li>
-        <li>
+        <li
+          class="items"
+        >
           js
         </li>
       </ul>
     </div>
   </body>,
   "container": <div>
-    <ul>
-      <li>
+    <ul
+      class="container"
+    >
+      <li
+        class="items"
+      >
         html
       </li>
-      <li>
+      <li
+        class="items"
+      >
         css
       </li>
-      <li>
+      <li
+        class="items"
+      >
         js
       </li>
     </ul>

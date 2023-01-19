@@ -15,7 +15,12 @@ const listData = [
 ]
 
 function App() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('')
+  const [items, setItems] = useState(listData)
+
+  useEffect(() => {
+    setItems(listData.filter(elem => elem.toLowerCase().includes(search.toLowerCase())))
+  }, [search])
 
   return (
     <div className="App">
@@ -23,10 +28,10 @@ function App() {
         <Search value={search} onChange={(event) => setSearch(event.target.value)}>
           Find courses:
         </Search>
-        <List items={ listData } />
+        <List items={ items } />
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

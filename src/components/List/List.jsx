@@ -1,3 +1,5 @@
+import classes from './List.module.css'
+
 const List = (props) => {
   const {items = []} = props
 
@@ -6,9 +8,9 @@ const List = (props) => {
   }
 
   return (
-    <ul>
+    <ul className={classes.container}>
       {items.map(el => (
-        <li key={el}>{el}</li>
+        <li className={classes.items} key={el}>{el}</li>
       ))}
     </ul>
   )

@@ -1,0 +1,12 @@
+.items {
+  padding: 1rem;
+  background: antiquewhite;
+  color: darkslategrey;
+  border-radius: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.container {
+  list-style-type: none;
+  width: 50%;
+}
